@@ -1,4 +1,10 @@
 #!/bin/bash
+# This script is used for gerenating bind RPZ zone based on https urls from rkn dump.xml
+# dump.xml may be received with https://github.com/yegorov-p/python-zapret-info tools
+#
+# version 1.1
+# requirements: xmlstarlet
+
 [ -z "$2" ] && echo "$0 <dump.xml> <rpz-dns-zone>" && exit 1
 xmlstarlet sel -R -t -m '//content' -s 'D:T:-' 'url' -c '.' "$1" | xmlstarlet sel \
 	-t \
