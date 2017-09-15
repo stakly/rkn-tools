@@ -1,5 +1,5 @@
 #!/bin/bash
-# This script is used for gerenating bind RPZ zone based on https urls from rkn dump.xml
+# This script is used for generating bind RPZ zone based on https urls from rkn dump.xml
 # dump.xml may be received with https://github.com/yegorov-p/python-zapret-info tools
 #
 # version 1.1
